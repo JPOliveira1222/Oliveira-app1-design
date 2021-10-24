@@ -23,7 +23,7 @@ public class editViewController {
 
     @FXML
     private DatePicker dueDateEdit;
-    //are to change due date of title
+    //area to change due date of title
 
     @FXML
     private TableColumn<?, ?> editTableDescription;
@@ -36,4 +36,24 @@ public class editViewController {
     @FXML
     private TextField titleEdit;
     //text field to allow user of title edit
+
+    public class editTitle{
+
+    }
+
+    public class editDob{
+
+    }
+
+    public class editDescription{
+
+    }
+
+    public class completedTask{
+
+    }
+
+    public class editItem{
+
+    }
 }

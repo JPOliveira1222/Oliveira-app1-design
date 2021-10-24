@@ -27,3 +27,7 @@ public class loadListController {
     private TableColumn<?, ?> loadListTableName;
     //table view of name of load file
 }
+
+    class loadFile{
+
+    }

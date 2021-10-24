@@ -30,4 +30,8 @@ public class viewListController {
     private MenuButton sortByButton;
     //menu button that allows user to sort by date or title(possible allow search function?)
 
+    public class delete{
+
+    }
+
 }

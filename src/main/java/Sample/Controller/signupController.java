@@ -31,4 +31,6 @@ public class signupController {
     Saves entered information unless it is empty. if empty, pops up error.
      */
 }
+class signUpUser{
 
+}
