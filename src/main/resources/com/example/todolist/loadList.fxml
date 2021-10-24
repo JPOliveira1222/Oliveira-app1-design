@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #886F68;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.Controller.loadListController">
+   <children>
+      <AnchorPane layoutY="62.0" prefHeight="340.0" prefWidth="700.0" style="-fx-background-color: #424C55;" AnchorPane.topAnchor="62.0">
+         <children>
+            <TableView fx:id="LoadListTable" layoutX="14.0" layoutY="14.0" prefHeight="272.0" prefWidth="675.0">
+              <columns>
+                <TableColumn fx:id="loadListTableName" prefWidth="166.0" text="List Name" />
+                <TableColumn fx:id="loadListTableDescription" minWidth="0.0" prefWidth="419.0" text="Description" />
+                  <TableColumn fx:id="loadListTableDate" prefWidth="88.0" text="Date Saved" />
+              </columns>
+            </TableView>
+            <Button fx:id="loadListButton" layoutX="331.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #D1CCDC;" text="Load" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="275.0" text="Load List">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

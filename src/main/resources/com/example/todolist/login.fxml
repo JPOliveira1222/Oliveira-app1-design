@@ -7,19 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #886F68;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #886F68;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todolist.loginController">
    <children>
-      <AnchorPane layoutY="62.0" prefHeight="340.0" prefWidth="700.0" style="-fx-background-color: #424C55;">
+      <AnchorPane layoutY="62.0" prefHeight="340.0" prefWidth="700.0" style="-fx-background-color: #424C55;" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="62.0">
          <children>
-            <TextField layoutX="140.0" layoutY="118.0" prefHeight="25.0" prefWidth="421.0" promptText="Username" />
-            <PasswordField layoutX="140.0" layoutY="170.0" prefHeight="25.0" prefWidth="421.0" promptText="Password" />
+            <TextField fx:id="loginUsername" layoutX="140.0" layoutY="118.0" prefHeight="25.0" prefWidth="421.0" promptText="First Name" />
+            <PasswordField fx:id="loginPassword" layoutX="140.0" layoutY="170.0" prefHeight="25.0" prefWidth="421.0" promptText="Last Name" />
             <Label alignment="CENTER" layoutX="252.0" layoutY="41.0" prefHeight="35.0" prefWidth="197.0" text="Login" textFill="WHITE">
                <font>
                   <Font size="29.0" />
                </font>
             </Label>
-            <Button layoutX="216.0" layoutY="244.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="270.0" style="-fx-background-color: #D1CCDC;" text="Login" />
+            <Button fx:id="loginButton" layoutX="216.0" layoutY="244.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="270.0" style="-fx-background-color: #D1CCDC;" text="Login" />
          </children>
       </AnchorPane>
       <TextField alignment="CENTER" layoutX="143.0" prefHeight="28.0" prefWidth="421.0" style="-fx-background-color: #886F68;" text="To do">
@@ -27,6 +26,6 @@
             <Font name="System Bold" size="37.0" />
          </font>
       </TextField>
-      <Button alignment="CENTER" layoutX="611.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #D1CCDC;" text="Sign Up" />
+      <Button fx:id="signUpButton" alignment="CENTER" layoutX="619.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #D1CCDC;" text="Sign Up" />
    </children>
 </AnchorPane>

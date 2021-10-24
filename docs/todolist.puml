@@ -1,0 +1,154 @@
+@startuml
+
+    class addItemFromNewList{
+    'behaviours
+    +setListName()
+    +setListDescription()
+    +setItemName()
+
+    }
+
+    class addListController {
+    -openWindow()
+    +newListDescription
+    +newListDueDate
+    +newListSave
+    +newListTitle
+
+
+    }
+
+    class editViewController{
+    +ItemEditView
+    +completedNoRadio
+    +completedYesRadio
+    +descriptionEdit
+    +dueDateEdit
+    +editTableDescription
+    +editTableItem
+    +titleEdit
+    }
+
+    class loadListController{
+    LoadListTable
+    loadListButton
+    loadListTableDate
+    loadListTableDescription
+    loadListTableName
+    }
+
+    class loginController{
+    +loginButton
+    +loginPassword
+    +loginUsername
+    +signUpButton
+
+    }
+
+    class mainMenuController{
+    +addListButton
+    +loadListButton
+    +saveListButton
+    +viewListButton
+
+    }
+
+    class saveListController{
+    -save list
+    }
+
+    class signupController{
+    +signupDOB
+    +signupFirstName
+    +signupLastName
+    +signupSaveButton
+
+    }
+
+    class viewListController{
+    +editButton
+    +listDeleteButton
+    +listTableView
+    +mainMenuButton
+    +saveButton
+    +sortByButton
+
+    }
+
+    class saveList{
+   - arrayList size
+    +arrayList<>
+    +size(int)
+    }
+     saveList --> addItemFromNewList
+
+
+    class openWindow{
+    +loadWindow()
+    }
+    openWindow --> mainMenuController
+    openWindow --> addListController
+    openWindow --> viewListController
+
+
+
+    class saveFile{
+    -newList.createNewFile(.txt)
+    +setFileName()
+    }
+
+    saveFile --> saveListController
+
+    class loadFile{
+    -setFileName.getResourceAsStream(.txt)
+    }
+    loadFile --> loadListController
+
+
+   class signUpUser{
+   +signupFirstName(string)
+   +signupLastName(string)
+   +signupDOB(int)
+   }
+
+   signUpUser --> signupController
+   signUpUser --> loginController
+
+   class editTitle{
+   +title.replace()
+   }
+
+   class editDescriptions{
+   listDescription.replace()
+   }
+
+   class editDob{
+   +calender
+   -timeStamp()
+   -timestamp.replace()
+   }
+
+   class completedTask{
+   +yes
+   +no
+  -getcompleteTask()
+   }
+
+    editTitle --> editViewController
+    editDob --> editViewController
+    editDescriptions --> editViewController
+    completedTask --> editViewController
+
+   class delete {
+   +delete
+   -fileName.delete()
+   }
+    delete --> viewListController
+
+    class itemEdit {
+    itemEdit.replace(name)
+    itemEdit.replace(description)
+   }
+    itemEdit --> editViewController
+
+@enduml

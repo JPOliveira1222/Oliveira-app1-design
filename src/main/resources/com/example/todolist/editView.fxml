@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #886F68;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.Controller.editViewController">
+   <children>
+      <AnchorPane layoutY="68.0" prefHeight="340.0" prefWidth="700.0" style="-fx-background-color: #424C55;" AnchorPane.topAnchor="68.0">
+         <children>
+            <TextField fx:id="titleEdit" layoutX="14.0" layoutY="31.0" promptText="Title" />
+            <TextArea fx:id="descriptionEdit" layoutX="14.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" promptText="Description" />
+            <DatePicker fx:id="dueDateEdit" layoutX="14.0" layoutY="283.0" promptText="Due Date" />
+            <TableView fx:id="ItemEditView" layoutX="227.0" layoutY="70.0" prefHeight="200.0" prefWidth="449.0">
+              <columns>
+                <TableColumn fx:id="editTableItem" prefWidth="111.0" text="Item" />
+                <TableColumn fx:id="editTableDescription" prefWidth="337.0" text="Description" />
+              </columns>
+            </TableView>
+            <RadioButton fx:id="completedYesRadio" layoutX="227.0" layoutY="300.0" mnemonicParsing="false" text="Yes" textFill="WHITE" />
+            <RadioButton fx:id="completedNoRadio" layoutX="282.0" layoutY="300.0" mnemonicParsing="false" text="No" textFill="WHITE" />
+            <Label layoutX="227.0" layoutY="275.0" prefHeight="17.0" prefWidth="95.0" text="Completed?" textFill="WHITE" />
+            <Label alignment="CENTER" layoutX="413.0" layoutY="41.0" prefHeight="30.0" prefWidth="78.0" text="Items" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="317.0" layoutY="8.0" text="Edit">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

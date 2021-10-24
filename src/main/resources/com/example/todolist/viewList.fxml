@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #886F68;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Sample.Controller.viewListController">
+   <children>
+      <AnchorPane layoutY="136.0" prefHeight="340.0" prefWidth="700.0" style="-fx-background-color: #424C55;" AnchorPane.topAnchor="62.0">
+         <children>
+            <Button fx:id="mainMenuButton" layoutX="312.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #D1CCDC;" text="Main Menu" />
+            <Button fx:id="EditButton" layoutX="592.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #D1CCDC;" text="Edit" AnchorPane.rightAnchor="71.0" />
+            <Button fx:id="saveButton" layoutX="639.0" layoutY="301.0" mnemonicParsing="false" style="-fx-background-color: #D1CCDC;" text="Save" AnchorPane.rightAnchor="20.0" />
+            <ListView fx:id="listTableView" layoutX="20.0" layoutY="19.0" prefHeight="264.0" prefWidth="660.0" />
+            <MenuButton fx:id="sortByButton" alignment="CENTER" layoutX="20.0" layoutY="301.0" mnemonicParsing="false" popupSide="TOP" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #D1CCDC;" text="Sort By ">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <Button fx:id="listDeleteButton" alignment="CENTER" layoutX="514.0" layoutY="301.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: #D1CCDC;" text="Delete " />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="151.0" layoutY="9.0" prefHeight="38.0" prefWidth="398.0" text="All Lists">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
